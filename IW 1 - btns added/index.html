@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Task Picker</title>
+</head>
+<body>
+
+  <div id="loader" style="display: none;">
+    <img src="loading-spinner.svg" alt="Loading...">
+  </div>
+  
+  <h1>Task Picker</h1>
+  <form id="industry-form">
+    <label for="industry-dropdown">Select an industry:</label>
+    <select id="industry-dropdown">
+      <!-- Options will be added here by JavaScript -->
+    </select>
+    <button type="submit" id="submit-button">Pick a task</button>
+  </form>
+  <div>
+    <!-- Selected task will be displayed here -->
+    <p id="record-container"></p>
+  </div>
+
+  <div id="name"></div>
+  <div id="upvotes"></div>
+  <button id="upvote-button">Upvote</button> <p id="upvote-count"></p>
+  <button id="downvote-button">Downvote</button> <p id="upvote-count"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
